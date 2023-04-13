@@ -1,0 +1,37 @@
+import turtle
+t = turtle.Turtle()
+s = turtle.Screen()
+
+s.title("3D_CUBE")
+s.screensize(800,640,bg="black")
+
+t.pencolor("yellow")
+t.pensize(3)
+t.penup()
+t.goto(-150,-150)
+t.pendown()
+def square():
+    for i in range(0,4,1):
+        t.forward(200)
+        t.left(90)
+
+square()
+t.left(30)
+t.forward(200)
+t.right(30)
+square()
+t.left(90)
+t.forward(200)
+t.left(90+30)
+t.forward(200)
+t.left(60)
+t.forward(200)
+t.left(90)
+t.forward(200)
+t.left(30)
+t.forward(200)
+t.left(60)
+t.forward(200)
+t.left(120)
+t.forward(200)
+turtle.done()
